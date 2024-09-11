@@ -1,0 +1,179 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(kbc3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* background: linear-gradient(135deg, #f0f0f0, #e0e0e0); Subtle Gradient Background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent; /* White Background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced Shadow */
+}
+#gh{
+    height: 50px;
+    border-radius: 15px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    right: 50%;
+
+    
+}
+
+#gh:hover {
+    background-color: #25431d7a;
+    color: white;
+  }
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* Darker Gray Text */
+    font-size: 36px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between question section and prize section */
+}
+
+#question-container {
+    /* background-color: #28a745; */
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    margin: 5%;
+    width: 100%;
+    text-align: left;
+    /* background-color: transparent; */
+}
+
+
+#question {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff; /* Darker Gray Text */
+    font-weight: 600; /* Bold Question Text */
+}
+
+#options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient Blue Background */
+    color: #ffffff; /* White Text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500; /* Slightly Bolder Text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker Gradient on Hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#next-btn {
+    display: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #28a745, #218838); /* Green Gradient Background */
+    color: #ffffff; /* White Text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500; /* Slightly Bolder Text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34); /* Darker Green Gradient on Hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#info-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #fff; /* Darker Gray Text */
+}
+
+#score, #timer {
+    font-weight: 600; /* Bold Text */
+}
+
+#prize-container {
+    /* position: relative; */
+    display: inline-block;
+    top: 5%;
+    left: 75%;
+    width: 20%;
+    background: transparent; /* Very Light Gray Background */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+}
+
+#prize-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff; /* Darker Gray Text */
+    font-weight: 600; /* Bold Text */
+}
+endgame.h2{
+
+    color: #fff;
+
+}
+
+
+
+#prize-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #2c3e50; /* Darker Gray Text */
+}
+
+#prize-list li {
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: 1px solid #dddddd; /* Light Gray Border */
+    background: #ffffff; /* White Background for Prizes */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#prize-list li:hover {
+    background: #e0e0e0; /* Light Gray Background on Hover */
+    transform: scale(1.02); /* Slightly enlarge item on hover */
+}
+
+#prize-list li.highlight {
+    background: #ffd700; /* Gold Background for Current Prize */
+    font-weight: 700; /* Bold Text */
+    color: #000000; /* Black Text */
+}

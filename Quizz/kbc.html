@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Game</title>
+    <link rel="stylesheet" href="kbc.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>KBC Game</h1>
+        <div class="content">
+            <!-- Question and Options Section -->
+            <div id="question-container">
+                <h2 id="question">Question will appear here</h2>
+                <ul id="options">
+                    <li><button class="option-btn" onclick="checkAnswer(0)">Option 1</button></li>
+                    <li><button class="option-btn" onclick="checkAnswer(1)">Option 2</button></li>
+                    <li><button class="option-btn" onclick="checkAnswer(2)">Option 3</button></li>
+                    <li><button class="option-btn" onclick="checkAnswer(3)">Option 4</button></li>
+                </ul>
+                <div id="info-container">
+                    <h3 id="score">Score: 0</h3>
+                    <h3 id="timer">Time Left: 30</h3>
+                </div>
+                <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            </div>
+            <button onclick="startGame()" id="gh">StartGame</button>
+            <audio id="mp">
+                <source src="KBC_kbcsongs.mp3"/>
+            </audio>
+
+            <!-- Prize Section -->
+            <div id="prize-container">
+                <h2>Prizes</h2>
+                <ul id="prize-list">
+                    <!-- The prizes will be dynamically updated via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="kbc.js"></script>
+</body>
+</html>
